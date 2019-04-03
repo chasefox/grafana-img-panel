@@ -1,0 +1,27 @@
+{
+  "type": "panel",
+  "name": "IMG",
+  "id": "chasefox-img-panel",
+
+  "dataFormats": [],
+
+  "info": {
+    "description": "IMG panel for grafana",
+    "author": {
+      "name": "Matthew R Chase",
+      "url": "https://github.com/chasefox"
+    },
+    "keywords": ["image", "img"],
+    "logos": {
+      "small": "img/icn-img-panel_48.png",
+      "large": "img/icn-img-panel_124.png"
+    },
+    "version": "0.3.2",
+    "updated": "2019-04-02"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "5.x.x",
+    "plugins": [ ]
+  }
+}

@@ -1,0 +1,30 @@
+<div class="section gf-form-group">
+	<h5 class="section-heading">Image URL</h5>
+	<div class="gf-form">
+		<label class="gf-form-label width-8">URL</label>
+		<input type="text" class="input-medium gf-form-input" style="width: 400px" ng-model="ctrl.panel.url"
+		ng-change="ctrl.render()" ng-model-onblur="">
+	</div>
+</div>
+
+<div class="section gf-form-group">
+	<h5 class="section-heading">Refresh Options</h5>
+
+	<gf-form-switch class="gf-form" label="Refresh" label-class="width-8" checked="ctrl.panel.doInterval" on-change="ctrl.render()">
+	<!-- <label for="check-url-refresh" class="gf-form-switch-container">
+	  <div class="gf-form-label width-8" ng-show="ctrl.label">Refresh</div>
+	  <div class="gf-form-switch " ng-if="ctrl.refresh">
+	    <input id="check-url-refresh" type="checkbox" ng-model="ctrl.refresh" ng-change="ctrl.internalOnChange()">
+	    <span class="gf-form-switch__slider"></span>
+	  </div>
+	</label> -->
+	</gf-form-switch>
+
+	<div class="gf-form">
+		<label class="gf-form-label width-8">Seconds</label>
+		<input type="number" class="input-small gf-form-input max-width-10" ng-model="ctrl.panel.intervalS" ng-change="ctrl.render()" ng-model-onblur="">
+	</div>
+
+	<hr />
+	<gf-form-switch class="gf-form" label="Bust Cache" label-class="width-8" checked="ctrl.panel.bustCache" on-change="ctrl.render()"></gf-form-switch>
+</div>
